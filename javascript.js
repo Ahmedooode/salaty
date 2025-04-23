@@ -32,7 +32,7 @@ function updateDates() {
 setInterval(updateClock, 1000);
 updateClock();
 updateDates();
-
+// اعتمدت عل توقيت ISNA أقرب المواقيت للسنة في توقيت الفجر
 const urlParams = new URLSearchParams(window.location.search);
 const city = urlParams.get("city") || "مدينتك";
 document.getElementById("city-name").innerText = city;
